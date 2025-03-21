@@ -1,0 +1,36 @@
+<div class="container mt-4">
+    <h2 class="text-center text-success">
+      <img [src]="img"/> Mega-Sena
+    </h2>
+  
+    <div class="card p-4 shadow">
+      <div class="mb-3">
+        <label for="aposta" class="form-label">
+          <b>Digite sua aposta de 6 a 10 números:</b>
+        </label>
+        <input type="text" id="aposta" class="form-control"
+          [(ngModel)]="aposta"
+          placeholder="ex: 1,2,3,4,5,6..."
+          aria-label="Digite sua aposta">
+      </div>
+  
+      <button class="btn btn-success" (click)="verificarAposta()">
+        Verificar
+      </button>
+  
+      <!-- Exibir os números sorteados SOMENTE após clicar no botão -->
+      <div class="text-center my-3" *ngIf="mostrarSorteio">
+        <h4 class="text">Números Sorteados:</h4>
+        <div>
+          <ng-container *ngFor="let num of sorteio">
+            <span class="badge bg-sucess mx-1">{{ num }}</span>
+          </ng-container>
+        </div>
+      </div>
+  
+      <div *ngIf="msg" class="alert alert-secondary mt-3">
+        {{ msg }}
+      </div>
+    </div>
+  </div>
+  

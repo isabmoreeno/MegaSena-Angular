@@ -1,0 +1,36 @@
+h2 {
+    font-size: 3rem; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    margin-bottom: 25px;
+  }
+
+  button{
+    font-size: 1.2rem; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    margin-bottom: 25px;
+  }
+
+  h4{
+    color: #386641;
+  }
+
+  .container {
+    padding-top: 125px;
+    max-width: 550px;
+    margin: auto;
+  }
+  
+.badge {
+    background-color: #386641;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  
+    img {
+        width: 40px;
+        margin: 0 auto;
+     }
+     
